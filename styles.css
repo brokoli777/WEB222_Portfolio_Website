@@ -1,7 +1,3 @@
-/* @font-face {
-    font-family: testfont;
-    src: url("./Voyager\ Grotesque\(regular\).ttf") format("opentype");
-} */
 
 @media only screen and (max-width: 800px) {
     body {
@@ -11,12 +7,6 @@
     word-wrap: break-word !important;
     }
 
-    .bodyContainer
-  {
-
-    
-  }
-
   
 
   #nameLogo
@@ -24,13 +14,7 @@
     display: none !important;
   }
 
-  /* .navbar
-  {
-    display: flex;
-    margin-left: 1.5%;
-    margin-right: 2.5%;
-    
-  } */
+  
 }
 
 body{
@@ -44,8 +28,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     
-    /* width: 90%; */
-    /* font-family: 'testfont'; */
+    
     color: black;
     overflow-x: hidden !important;
 }
@@ -84,7 +67,7 @@ body{
 {
     margin-left: 3%;
     margin-right: 3%;
-    /* color: black; */
+    
 }
 
 
@@ -131,10 +114,6 @@ ul {
     background-color: rgb(122, 222, 253)
   }
 
-  .mainCardTitle
-  {
-   
-  }
 
   
 #error-msg
@@ -170,14 +149,6 @@ ul {
 
     
    margin-top: 100px;
-    
-}
-
-.headingContainer .container
-{
-    /* display: flex;
-    margin: 10px; */
-    
     
 }
 

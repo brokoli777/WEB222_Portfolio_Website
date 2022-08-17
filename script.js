@@ -2,11 +2,6 @@ var infoHiring = document.getElementById("inputHiring");
 
 var hiringContainer = document.getElementById("hiringContainer");
 
-// if(document.getElementById('inputHiring').checked == true)
-// {
-//     console.log("thanos");
-// }
-
 function displayHourlyRate() {
   var label = document.createElement("label");
   label.innerHTML = "Hourly Rate (in $/hr):";
@@ -21,7 +16,6 @@ infoHiring.addEventListener("change", displayHourlyRate);
 
 var inputForm = document.getElementById("inputForm");
 inputForm.onsubmit = function () {
-  // console.log("thanos");
 
   if (
     validateName() &&
@@ -76,31 +70,9 @@ function hideErrorMessage(msg) {
 
 function validateName() {
   var inputName = document.querySelector("#inputName").value;
-  // inputName = inputName.trim()
-  // var inputNameArr = inputName.split(" ")
-  // console.log(inputNameArr);
-  // if(inputNameArr.length<)
-  // {
-  //     return false;
-  // }
-  // return true;
-  // if(inputName === "") console.log("it is empty");
 
   return (!(/[0-9]/.test(inputName)) && inputName != "");
 }
-
-// function validatePhoneNumber() {
-//     var phoneNumber = document.querySelector('#phone').value;
-//     phoneNumber = phoneNumber.trim();
-//     var phoneNumberArr = phoneNumber.split("");
-//     console.log(phoneNumberArr);
-
-//     function isNumber(n) {
-//         return !isNaN(n);
-//     }
-
-//     return phoneNumberArr.every(isNumber) && phoneNumberArr.length == 10;
-// }
 
 function validateEmail() {
   var inputEmail = document.querySelector("#inputEmail").value;
@@ -144,7 +116,6 @@ function validateRadio() {
 
 function validatePostalCode() {
   var inputCode = document.querySelector("#inputPostalCode").value;
-  // console.log(inputDate);
 
   if ( /([ABCEGHJKLMNPRSTVXY]\d)([ABCEGHJKLMNPRSTVWXYZ]\d){2}/i.test(inputCode))
   {
